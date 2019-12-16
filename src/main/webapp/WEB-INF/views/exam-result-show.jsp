@@ -29,17 +29,17 @@
       </div> -->
             <table class="table table-bordered">
               <tr>
-                <th>考试名称</th>
-                <th>考试试卷</th>
-                <th>考试日期</th>
-                <th>成绩</th>
+                <th>问卷题目</th>
+                <th>问卷名称</th>
+                <th>完成时间</th>
+                <th>完成度</th>
               </tr>
               <c:forEach items="${entities}" var="result">
                 <tr>
                   <td><c:out value="${result.exam.name}" /></td>
                   <td><c:out value="${result.exam.exampaper.name}" /></td>
                   <td><c:out value="${result.sysModifyLog.createDate}" /></td>
-                  <td><c:out value="${result.grade}" /></td>
+                  <td><c:out value="${result.grade}" />%</td>
                 </tr>
               </c:forEach>
             </table>
