@@ -110,12 +110,13 @@ public class SysUser extends BaseEntityImpl<Long> implements UserDetails {
 		 if(authorities.stream()
 				.map(x -> x.getAuthority())
 				.anyMatch(a -> a.equals("ROLE_ADMIN")))
-		 return 2;
-		 else if (authorities.stream().map(x -> x.getAuthority())
-				 .anyMatch(a -> a.equals("ROLE_USER")))
-		 	return 1;
-		 else
-		 	return 3;
+		 	return 2;
+		 	else if (authorities.stream()
+				.map(x -> x.getAuthority())
+				.anyMatch(a -> a.equals("ROLE_REPORT")))
+		 		return 3;
+		 	else
+		 		return 1;
 	}
 	
 	@Transient

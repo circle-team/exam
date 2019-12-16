@@ -43,7 +43,7 @@
                   <td><c:out value="${exam.exampaper.name}" /></td>
                   <td><c:out value="${exam.time}" /></td>
                   <td><a class="btn btn-primary btn-sm"
-                    href="${ctx}/exam/start?id=${exam.id}">参加考试</a></td>
+                    href="${ctx}/exam/start?id=${exam.id}">测试调查</a></td>
                 </tr>
               </c:forEach>
             </table>

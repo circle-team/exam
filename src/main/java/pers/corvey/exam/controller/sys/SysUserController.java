@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import pers.corvey.exam.controller.common.BaseControllerImpl;
 import pers.corvey.exam.entity.sys.SysAuthority;
 import pers.corvey.exam.entity.sys.SysUser;
+import pers.corvey.exam.entity.sys.SysUserInfo;
 import pers.corvey.exam.service.sys.SysAuthorityService;
 import pers.corvey.exam.service.sys.SysUserService;
+import pers.corvey.exam.service.sys.UserInfoService;
 
 @Controller
 @RequestMapping("/sys/user")
@@ -24,14 +26,17 @@ public class SysUserController extends BaseControllerImpl<SysUser, Long> {
 	private final SysUserService sysUserService;
 	
 	private final SysAuthorityService sysAuthorityService;
-	
+
+	private final UserInfoService userInfoService;
+
 	@Autowired
-	public SysUserController(SysUserService sysUserService, 
-			SysAuthorityService sysAuthorityService) {
+	public SysUserController(SysUserService sysUserService,
+							 SysAuthorityService sysAuthorityService, UserInfoService userInfoService) {
 		
 		super(sysUserService, "sys/user-input.jsp", "sys/user-list.jsp");
 		this.sysUserService = sysUserService;
 		this.sysAuthorityService = sysAuthorityService;
+		this.userInfoService = userInfoService;
 	}
 	
 	/**
@@ -70,4 +75,13 @@ public class SysUserController extends BaseControllerImpl<SysUser, Long> {
 		model.addAttribute("authorities", authorities);
 		return super.showDetailView(model, entity);
 	}
+
+	@PostMapping("/info")
+	public String showInfoView(Model model,@RequestParam("id")Integer id){
+        SysUserInfo userInfo =  userInfoService.GetUserInfoSerivce(id);
+       model.addAttribute("userinfo",userInfo);
+       return "index";
+	}
+
+
 }
