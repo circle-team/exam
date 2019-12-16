@@ -80,7 +80,7 @@ public class SysUserController extends BaseControllerImpl<SysUser, Long> {
 	public String showInfoView(Model model,@RequestParam("id")Integer id){
         SysUserInfo userInfo =  userInfoService.GetUserInfoSerivce(id);
        model.addAttribute("userinfo",userInfo);
-       return "index";
+       return "user-detail-show";
 	}
 
 
