@@ -29,25 +29,25 @@
                                     <td>&nbsp;</td>
                                     <td>名字</td>
                                     <td>&nbsp;</td>
-                                    <td><c:out value="${user.name}"/></td>
+                                    <td><c:out value="${userinfo.name}"/></td>
                                 </tr>
                                 <tr class="success">
                                     <td>&nbsp;</td>
                                     <td>积分</td>
                                     <td>&nbsp;</td>
-                                    <td><c:out value="${user.money}"/></td>
+                                    <td><c:out value="${userinfo.money}"/></td>
                                 </tr>
                                 <tr class="error">
                                     <td>&nbsp;</td>
                                     <td>手机</td>
                                     <td>&nbsp;</td>
-                                    <td><c:out value="${user.phone}"/></td>
+                                    <td><c:out value="${userinfo.telphone}"/></td>
                                 </tr>
                                 <tr class="warning">
                                     <td>&nbsp;</td>
                                     <td>Email</td>
                                     <td>&nbsp;</td>
-                                    <td><c:out value="${user.email}"/></td>
+                                    <td><c:out value="${userinfo.email}"/></td>
                                 </tr>
                                 <tr class="info">
                                     <td>&nbsp;</td>
