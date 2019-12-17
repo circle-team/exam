@@ -41,7 +41,7 @@
                                     <td>&nbsp;</td>
                                     <td>手机</td>
                                     <td>&nbsp;</td>
-                                    <td><c:out value="${user.phone}"/></td>
+                                    <td><c:out value="${user.telphone}"/></td>
                                 </tr>
                                 <tr class="warning">
                                     <td>&nbsp;</td>

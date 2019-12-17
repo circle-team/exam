@@ -41,7 +41,7 @@
             </c:when>
             <c:otherwise></c:otherwise>
           </c:choose>
-          <li><a href="${ctx}/sys/user/info?id=${user.id}">个人信息</a></li>
+          <li><a href="${ctx}/sys/user/info">个人信息</a></li>
           <li><a href="${ctx}/logout">退出登录</a></li>
         </ul>
 

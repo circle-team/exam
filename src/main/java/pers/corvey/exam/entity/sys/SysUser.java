@@ -24,6 +24,10 @@ public class SysUser extends BaseEntityImpl<Long> implements UserDetails {
 	private String username;
 	private String password;
 	private Integer money;
+	private String email;
+	private String telphone;
+	private String image;
+	private String gender;
 	private Set<SysAuthority> authorities;
 	
 	public SysUser() {}
@@ -33,7 +37,39 @@ public class SysUser extends BaseEntityImpl<Long> implements UserDetails {
 		return String.format("SysUser[id=%s, name=%s, username=%s, password=%s]", 
 				id, name, username, password);
 	}
-	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelphone() {
+		return telphone;
+	}
+
+	public void setTelphone(String telphone) {
+		this.telphone = telphone;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	@Column(length = 20, nullable = false)
 	public String getName() {
 		return name;
