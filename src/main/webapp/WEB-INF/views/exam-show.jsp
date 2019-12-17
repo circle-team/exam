@@ -14,7 +14,7 @@
         <div class="panel panel-info">
           <div class="panel-heading">
             <h3 class="panel-title">
-              <span class="glyphicon glyphicon-th-list"></span>&nbsp;所有考试
+              <span class="glyphicon glyphicon-th-list"></span>&nbsp;所有调查
             </h3>
           </div>
           <div class="panel-body">
@@ -32,9 +32,9 @@
             </div>
             <table class="table table-bordered">
               <tr>
-                <th>考试名称</th>
-                <th>考试试卷</th>
-                <th>考试时间（分钟）</th>
+                <th>问卷题目</th>
+                <th>问卷名称</th>
+                <th>题目数</th>
                 <th>操作</th>
               </tr>
               <c:forEach items="${entities}" var="exam">

@@ -33,8 +33,8 @@
 	      </c:forEach>
 	      <div class="row">
 	      	<div class="col-md-12 text-center">
-		      <h4>剩余时间</h4>
-		      <h4 id="left_time">${entity.time}分钟0秒</h4>
+		      <h4>剩余问题</h4>
+		      <h4 id="left_time">${entity.time}个</h4>
 	      	</div>
 	      </div>
 	    </div>

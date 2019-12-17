@@ -22,7 +22,7 @@
 	  <div class="panel panel-info">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">
-	        <span class="glyphicon glyphicon-th-list"></span>&nbsp;题目导航
+	        <span class="glyphicon glyphicon-th-list"></span>&nbsp;问卷导航
 	      </h3>
 	    </div>
 	    <div class="panel-body row">
@@ -48,10 +48,8 @@
 	      <div class="panel panel-primary">
 	        <div class="panel-heading"><h3 class="panel-title">考试成绩</h3></div>
   	        <div class="panel-body row">
-	          <div class="col-md-2">成绩</div>
-	          <div class="col-md-10">${examResult.grade}</div>
-	          <div class="col-md-2">错题数</div>
-	          <div class="col-md-10">${examResult.wrongCount} / ${examResult.allCount}</div>
+	          <div class="col-md-2">问题数</div>
+	          <div class="col-md-10"${examResult.allCount}</div>
 	        </div>
 	      </div>
 		  <c:forEach items="${entities}" var="result" varStatus="st">

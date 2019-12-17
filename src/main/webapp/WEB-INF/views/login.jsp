@@ -31,7 +31,7 @@
 <body>
   <div class="container">
     <div class="row panel panel-default center">
-      <h3><b>登录到在线考试系统</b></h3>
+      <h3><b>登录到在线问卷调查系统</b></h3>
       <form class="form-horizontal" action="${ctx}/login" method="post">
         <div class="col-xs-offset-1 col-xs-10 input-group">
           <span class="input-group-addon">

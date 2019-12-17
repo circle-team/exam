@@ -6,7 +6,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">
         <span class="glyphicon glyphicon-align-justify"></span>
-        &nbsp;试卷信息管理（注：删除试卷前请删除所关联的考试，否则删除失败！）
+        &nbsp;问卷管理（注：删除问卷前请删除所关联的问卷，否则删除失败！）
       </h3>
     </div>
     <div class="panel-body">
@@ -23,9 +23,9 @@
 	    </div>
 		<table class="table table-bordered">
       	<tr>
-      	  <th>试卷名称</th>
-      	  <th>试卷描述</th>
-      	  <th>出题人</th>
+      	  <th>问卷名称</th>
+      	  <th>问卷描述</th>
+      	  <th>发起者</th>
       	  <th>操作</th>
       	</tr>
 		<c:forEach items="${entities}" var="exampaper">

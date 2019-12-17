@@ -5,6 +5,6 @@
 <meta http-equiv="refresh" content="0;url=exam/show"> 
 </head>
 <body>
-<h2>Hello World!</h2>
+<h2 style="margin: auto">正在进入问卷系统</h2>
 </body>
 </html>

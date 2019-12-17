@@ -13,11 +13,11 @@
       </div>
       <div class="pull-left" style="padding: 5px 0 5px 10px">
         <ul class="nav navbar-nav">
-          <li><a href='${ctx}/exam/show'>在线考试</a></li>
+          <li><a href='${ctx}/exam/show'>在线问卷</a></li>
           <%-- <li><a href='${ctx}/exam/show'>在线练习</a></li> --%>
-          <li><a href='${ctx}/examresult/show'>我的成绩</a></li>
-          <li><a href='${ctx}/exam/wrong/show'>我的错题</a></li>
-          <li><a href='${ctx}/resource/all'>资源大全</a></li>
+          <li><a href='${ctx}/examresult/show'>完成记录</a></li>
+          <li><a href='${ctx}/exam/wrong/show'>问卷统计</a></li>
+<%--          <li><a href='${ctx}/resource/all'>资源大全</a></li>--%>
         </ul>
       </div>
       <div class="pull-right" style="padding: 5px 15px 5px 0">
@@ -41,6 +41,7 @@
             </c:when>
             <c:otherwise></c:otherwise>
           </c:choose>
+          <li><a href="${ctx}/sys/user/info">个人信息</a></li>
           <li><a href="${ctx}/sys/user/info">个人信息</a></li>
           <li><a href="${ctx}/logout">退出登录</a></li>
         </ul>

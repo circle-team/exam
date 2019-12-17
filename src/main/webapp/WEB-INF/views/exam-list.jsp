@@ -6,7 +6,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">
         <span class="glyphicon glyphicon-align-justify"></span>
-        &nbsp;考试管理
+        &nbsp;调查管理
       </h3>
     </div>
     <div class="panel-body">
@@ -24,8 +24,8 @@
 	    </div>
 		<table class="table table-bordered">
       	<tr>
-      	  <th>考试名称</th>
-      	  <th>考试试卷</th>
+      	  <th>问卷题目</th>
+      	  <th>问卷名称</th>
       	  <th>发布者</th>
       	  <th>操作</th>
       	</tr>

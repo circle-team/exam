@@ -5,7 +5,7 @@
   <div class="panel panel-info">
     <div class="panel-heading">
       <h3 class="panel-title">
-        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;考试管理
+        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;问卷管理
       </h3>
     </div>
     <div class="panel-body">
@@ -13,7 +13,7 @@
         cssClass="form-horizontal" modelAttribute="entity">
         <form:hidden path="id" />
         <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">考试名称</label>
+          <label for="name" class="col-sm-2 control-label">问卷名称</label>
           <div class="col-sm-4">
             <form:input cssClass="form-control" path="name" />
           </div>
@@ -25,13 +25,13 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="description" class="col-sm-2 control-label">考试时间（分钟）</label>
+          <label for="description" class="col-sm-2 control-label">问卷问题数</label>
           <div class="col-sm-4">
             <form:input cssClass="form-control" path="time" type="number" min="0"/>
           </div>
         </div>
         <div class="form-group">
-          <label for="description" class="col-sm-2 control-label">考试试卷</label>
+          <label for="description" class="col-sm-2 control-label">问卷</label>
           <div class="col-sm-4">
             <form:select path="exampaperId" cssClass="form-control"
               items="${exampapers}" itemLabel="name" itemValue="id" />

@@ -5,7 +5,7 @@
   <div class="panel panel-info">
     <div class="panel-heading">
       <h3 class="panel-title">
-        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;试卷信息管理
+        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;问卷信息管理
       </h3>
     </div>
     <div class="panel-body">
@@ -13,7 +13,7 @@
         enctype="multipart/form-data" modelAttribute="entity">
         <form:hidden path="id" />
         <div class="form-group">
-          <label for="name" class="col-sm-2 control-label"> 试卷名 </label>
+          <label for="name" class="col-sm-2 control-label"> 问卷名 </label>
           <div class="col-sm-4">
             <form:input cssClass="form-control" path="name" />
           </div>

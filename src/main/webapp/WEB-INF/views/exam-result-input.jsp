@@ -5,7 +5,7 @@
   <div class="panel panel-info">
     <div class="panel-heading">
       <h3 class="panel-title">
-        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;成绩管理
+        <span class="glyphicon glyphicon-align-justify"></span> &nbsp;结果管理
       </h3>
     </div>
     <div class="panel-body">
@@ -13,21 +13,21 @@
         cssClass="form-horizontal" modelAttribute="entity">
         <form:hidden path="id" />
         <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">考试</label>
+          <label for="name" class="col-sm-2 control-label">调查</label>
           <div class="col-sm-4">
             <form:select cssClass="form-control" path="examId" 
               items="${exams}" itemLabel="name" itemValue="id"/>
           </div>
         </div>
         <div class="form-group">
-          <label for="description" class="col-sm-2 control-label">考试用户</label>
+          <label for="description" class="col-sm-2 control-label">问卷用户</label>
           <div class="col-sm-4">
             <form:select cssClass="form-control" path="userId" 
               items="${users}" itemLabel="name" itemValue="id"/>
           </div>
         </div>
         <div class="form-group">
-          <label for="description" class="col-sm-2 control-label">成绩</label>
+          <label for="description" class="col-sm-2 control-label">完成度</label>
           <div class="col-sm-4">
             <form:input cssClass="form-control" path="grade" type="number" step="1"/>
           </div>
