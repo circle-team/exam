@@ -18,26 +18,26 @@
 <div class="container">
   <div class="row">
   	<!-- 题目导航 -->
-    <div class="col-md-3" id="question-nav">
-	  <div class="panel panel-info">
-	    <div class="panel-heading">
-	      <h3 class="panel-title">
-	        <span class="glyphicon glyphicon-th-list"></span>&nbsp;题目导航
-	      </h3>
-	    </div>
-	    <div class="panel-body row">
-	      <c:forEach items="${entity.exampaper.questions}" var="question" varStatus="st">
-	      	<div class="col-md-3 text-center" style="margin-bottom: 10px;">
-	          <a class="btn btn-default btn-xs" href="#question-${question.id}">${st.count}</a>
-	      	</div>
-	      </c:forEach>
-	      <div class="row">
-	      	<div class="col-md-12 text-center">
-		      <h4>剩余问题</h4>
-		      <h4 id="left_time">${entity.time}个</h4>
-	      	</div>
-	      </div>
-	    </div>
+<%--    <div class="col-md-3" id="question-nav">--%>
+<%--	  <div class="panel panel-info">--%>
+<%--	    <div class="panel-heading">--%>
+<%--	      <h3 class="panel-title">--%>
+<%--	        <span class="glyphicon glyphicon-th-list"></span>&nbsp;题目导航--%>
+<%--	      </h3>--%>
+<%--	    </div>--%>
+<%--	    <div class="panel-body row">--%>
+<%--	      <c:forEach items="${entity.exampaper.questions}" var="question" varStatus="st">--%>
+<%--	      	<div class="col-md-3 text-center" style="margin-bottom: 10px;">--%>
+<%--	          <a class="btn btn-default btn-xs" href="#question-${question.id}">${st.count}</a>--%>
+<%--	      	</div>--%>
+<%--	      </c:forEach>--%>
+<%--	      <div class="row">--%>
+<%--	      	<div class="col-md-12 text-center">--%>
+<%--		      <h4>剩余时间</h4>--%>
+<%--		      <h4 id="left_time">${entity.time}</h4>--%>
+<%--	      	</div>--%>
+<%--	      </div>--%>
+<%--	    </div>--%>
 	  </div>
 	</div>
 	<!-- 题目 -->

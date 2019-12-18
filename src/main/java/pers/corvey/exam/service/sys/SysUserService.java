@@ -21,6 +21,10 @@ public class SysUserService extends BaseServiceImpl<SysUser, Long> {
 		super(sysUserDAO);
 		this.sysUserDAO = sysUserDAO;
 	}
+	public void getOneUserById(Integer id){
+
+	}
+
 
 	@Override
 	public SysUser save(SysUser entity) {

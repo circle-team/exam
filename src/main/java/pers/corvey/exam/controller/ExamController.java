@@ -75,11 +75,13 @@ public class ExamController extends BaseControllerImpl<Exam, Long> {
 	}
 	
 	@RequestMapping("/handin")
-	public String handIn(ChooseFormHelper form) {
+	public String handIn(ChooseFormHelper form,Model model) {
 		List<ChooseLog> chooseLogs = form.generateChooseLog();
 		chooseLogService.saveAll(chooseLogs);
 		examResultService.chooseToExamResult(chooseLogs);
-		return redirect("/result?id=" + form.getExamId());
+		List<Exam> exams = service.findAll();
+		model.addAttribute("entities", exams);
+		return "exam-show";
 	}
 	
 	@RequestMapping("/result")

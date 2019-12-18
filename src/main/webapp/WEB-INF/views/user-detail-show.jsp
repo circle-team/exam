@@ -8,6 +8,12 @@
 
 <body>
 <%@include file="/common/header.jsp" %>
+
+<%
+
+    session.setAttribute("user2", CurrentUtils.getCurrentUser());
+
+%>
 <div class="container">
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
@@ -21,42 +27,38 @@
                     <%@include file="/common/show-message.jsp" %>
                     <div class="container-fluid">
                         <div class="row-fluid">
+                            <form action="sys/user/update">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>&nbsp;</td>
+                                    <td>Id</td>
+                                    <td><input name="id" class="form-control" value="${sessionScope.user2.id}"></td>
+                                </tr>
+                                <tr>
                                     <td>名字</td>
-                                    <td>&nbsp;</td>
-                                    <td><c:out value="${user.name}"/></td>
+                                    <td><input name="name" class="form-control" value="${sessionScope.user2.name}"></td>
                                 </tr>
                                 <tr class="success">
-                                    <td>&nbsp;</td>
                                     <td>积分</td>
-                                    <td>&nbsp;</td>
                                     <td><c:out value="${user.money}"/></td>
                                 </tr>
                                 <tr class="error">
-                                    <td>&nbsp;</td>
                                     <td>手机</td>
-                                    <td>&nbsp;</td>
-                                    <td><c:out value="${user.telphone}"/></td>
+                                    <td><input  name="telphone" class="form-control" value="${sessionScope.user2.telphone}"></td>
                                 </tr>
                                 <tr class="warning">
-                                    <td>&nbsp;</td>
                                     <td>Email</td>
-                                    <td>&nbsp;</td>
-                                    <td><c:out value="${user.email}"/></td>
+                                    <td><input name="email" class="form-control" value="${sessionScope.user2.email}"></td>
                                 </tr>
                                 <tr class="info">
-                                    <td>&nbsp;</td>
-                                    <td>TB - Monthly5\</td>
-                                    <td>&nbsp;</td>
-                                    <td>Call in to confirm</td>
+                                    <td></td>
+                                    <td><button  type="submit" class="btn btn-default">修改</button></td>
                                 </tr>
                                 </tbody>
                             </table>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -66,5 +68,6 @@
 </div>
 </body>
 <script>
+    $.ajax()
 </script>
 </html>
