@@ -1,73 +1,65 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+
 <%@include file="/common/taglibs.jsp" %>
-<html>
-
-<head>
-    <%@include file="/common/head.jsp" %>
-</head>
-
-<body>
-<%@include file="/common/header.jsp" %>
-
-<%
-
-    session.setAttribute("user2", CurrentUtils.getCurrentUser());
-
-%>
-<div class="container">
-    <div class="row">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-xs-10">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-th-list"></span>&nbsp;我的信息
+                        <span class="glyphicon glyphicon-th-list">信息表</span>&nbsp;
                     </h3>
                 </div>
                 <div class="panel-body">
                     <%@include file="/common/show-message.jsp" %>
                     <div class="container-fluid">
                         <div class="row-fluid">
-                            <form action="sys/user/update">
+                            <form:form action="${ctx}/sys/user/save" method="post"
+                                       cssClass="form-horizontal" modelAttribute="entity">
+                                <form:hidden path="id" />
                             <table class="table table-bordered table-hover">
                                 <thead>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Id</td>
-                                    <td><input name="id" class="form-control" value="${sessionScope.user2.id}"></td>
+                                    <td>用户名</td>
+                                    <td><form:input cssClass="form-control" path="username"
+                                                    disabled="${entity.id != null}" /></td>
                                 </tr>
                                 <tr>
                                     <td>名字</td>
-                                    <td><input name="name" class="form-control" value="${sessionScope.user2.name}"></td>
+                                    <td><form:input cssClass="form-control" path="name" disabled="${entity.id!=user.id}" /></td>
                                 </tr>
                                 <tr class="success">
                                     <td>积分</td>
-                                    <td><c:out value="${user.money}"/></td>
+                                    <td><form:input cssClass="form-control" path="money" disabled="${user.admin!=2}"/></td>
                                 </tr>
                                 <tr class="error">
                                     <td>手机</td>
-                                    <td><input  name="telphone" class="form-control" value="${sessionScope.user2.telphone}"></td>
+                                    <td><form:input cssClass="form-control" path="telphone" disabled="${entity.id!=user.id}"/></td>
                                 </tr>
                                 <tr class="warning">
                                     <td>Email</td>
-                                    <td><input name="email" class="form-control" value="${sessionScope.user2.email}"></td>
-                                </tr>
-                                <tr class="info">
-                                    <td></td>
-                                    <td><button  type="submit" class="btn btn-default">修改</button></td>
+                                    <td><form:input cssClass="form-control" path="email" disabled="${entity.id!=user.id}"/></td>
                                 </tr>
                                 </tbody>
                             </table>
-                            </form>
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">权限角色</label>
+                                    <div class="col-sm-4">
+                                        <form:checkboxes path="authorityIds" delimiter="<br/>"
+                                                         items="${authorities}" itemLabel="authority" itemValue="id" disabled="${user.admin!=2}" />
+                                    </div>
+                                </div>
+                                <button  type="submit" class="btn btn-default">修改</button></td>
+                            </form:form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+
 </body>
 <script>
-    $.ajax()
+
 </script>
 </html>

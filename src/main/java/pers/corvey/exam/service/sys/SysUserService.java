@@ -39,6 +39,10 @@ public class SysUserService extends BaseServiceImpl<SysUser, Long> {
 		}
 		return super.save(entity);
 	}
+	public SysUser getById(String name){
+		return sysUserDAO.findByUsername(name);
+	}
+
 	
 	public Iterable<SysUser> search(String keyword) {
 		return sysUserDAO.findByNameStartingWith(keyword);

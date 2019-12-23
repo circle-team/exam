@@ -39,7 +39,7 @@
 	          </textarea>
 	        </div>
 	        <div class="col-md-2">
-	          <label class="control-label">是否为正确选项</label>
+	          <label class="control-label">最佳选项</label>
   	          <input type="checkbox" name="choices[${st.index}].answer" 
   	            ${choice.answer == true ? 'checked="checked"' : ''} />
 	        </div>
@@ -53,7 +53,7 @@
           <button class="btn btn-default" onclick="addNewChoice()" type="button">添加选项</button>
         </p>
         <div class="form-group">
-          <label for="content" class="col-md-2 control-label">所属试卷</label>
+          <label for="content" class="col-md-2 control-label">所属问卷</label>
           <div class="col-md-5">
             <form:checkboxes path="exampaperIds" delimiter="<br/>"
               items="${exampapers}" itemLabel="name" itemValue="id"/>

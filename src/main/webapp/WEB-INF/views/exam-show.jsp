@@ -34,7 +34,7 @@
               <tr>
                 <th>问卷题目</th>
                 <th>问卷名称</th>
-                <th>题目数</th>
+                <th>调查时间</th>
                 <th>操作</th>
               </tr>
               <c:forEach items="${entities}" var="exam">

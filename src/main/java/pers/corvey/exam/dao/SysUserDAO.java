@@ -8,4 +8,5 @@ public interface SysUserDAO extends CrudRepository<SysUser, Long> {
 
 	SysUser findByUsername(String username);
 	Iterable<SysUser> findByNameStartingWith(String keyword);
+
 }

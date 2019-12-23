@@ -39,7 +39,8 @@
                   <td><c:out value="${result.exam.name}" /></td>
                   <td><c:out value="${result.exam.exampaper.name}" /></td>
                   <td><c:out value="${result.sysModifyLog.createDate}" /></td>
-                  <td><c:out value="${result.grade}" />%</td>
+                   <td>100%</td>
+                    <%--                  <td><c:out value="${result.grade}" />%</td>--%>
                 </tr>
               </c:forEach>
             </table>

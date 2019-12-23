@@ -30,18 +30,19 @@
           </div>
         </form> -->
         <ul class="nav navbar-nav">
+          <li id="id"><a>${user.id}</a></li>
           <li><a>${user.name}</a></li>
           <li><a>积分：${user.money}</a></li>
           <c:choose>
           	<c:when test="${user.admin==2}">
-            <li><a href="${ctx}/sys/user/list">管理员页面</a></li>
+            <li><a href="${ctx}/exampaper/list">管理员页面</a></li>
             </c:when>
             <c:when test="${user.admin==3}">
-            <li><a href="${ctx}/sys/user/list">公司员工页面</a></li>
+            <li><a href="${ctx}/exampaper/list">公司员工页面</a></li>
             </c:when>
             <c:otherwise></c:otherwise>
           </c:choose>
-          <li><a href="${ctx}/sys/user/info">个人信息</a></li>
+          <li><a href="${ctx}/sys/user/inputs?id=${user.id}">个人信息</a></li>
           <li><a href="${ctx}/logout">退出登录</a></li>
         </ul>
 

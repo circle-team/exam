@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import pers.corvey.exam.entity.common.BaseEntity;
@@ -29,7 +30,7 @@ public abstract class BaseControllerImpl<T extends BaseEntity<ID>, ID extends Se
 	 * 管理模板页面名 
 	 */
 	protected static final String MANAGER_VIEW_NAME = "manager-templet";
-	
+//	protected static final String MANAGER_VIEW_NAMEW = "manager-templet";
 	/**
 	 * 管理模块在request中的属性名
 	 */
@@ -43,7 +44,7 @@ public abstract class BaseControllerImpl<T extends BaseEntity<ID>, ID extends Se
 	protected final BaseService<T, ID> mainService;
 	protected final String inputViewName;
 	protected final String listViewName;
-	
+
 	/**
 	 * 为父类的几个属性初始化
 	 * @param mainService 该controller主要用到的service
@@ -82,6 +83,9 @@ public abstract class BaseControllerImpl<T extends BaseEntity<ID>, ID extends Se
 		model.addAttribute(MANAGER_ATTRIBUTE_NAME, inputViewName);
 		return MANAGER_VIEW_NAME;
 	}
+
+
+
 	
 	@Override
 	public String deleteById(ID id) {
@@ -99,6 +103,9 @@ public abstract class BaseControllerImpl<T extends BaseEntity<ID>, ID extends Se
 		CurrentUtils.addAttributeToSession(CallBackMessage.MESSAGE_ATTRIBUTE_NAME, msg);
 		return redirect(LIST_PATH);
 	}
+
+
+
 	
 	/**
 	 * 针对需要entity的页面，通过id放入对应的entity

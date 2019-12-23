@@ -10,7 +10,9 @@
 <%@include file="/common/header.jsp" %>
 <div class="container">
   <div class="row">
+    <c:if test="${user.admin==2||user.admin==3}">
     <%@include file="/common/left-bar.jsp" %>
+    </c:if>
     <jsp:include page="${contentJSP}"/>
   </div>
 </div>

@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="description" class="col-sm-2 control-label">问卷问题数</label>
+          <label for="description" class="col-sm-2 control-label">问卷时间</label>
           <div class="col-sm-4">
             <form:input cssClass="form-control" path="time" type="number" min="0"/>
           </div>
