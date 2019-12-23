@@ -30,7 +30,7 @@
           </div>
         </form> -->
         <ul class="nav navbar-nav">
-          <li id="id"><a>${user.id}</a></li>
+          <li id="id" hidden="true"><a>${user.id}</a></li>
           <li><a>${user.name}</a></li>
           <li><a>积分：${user.money}</a></li>
           <c:choose>

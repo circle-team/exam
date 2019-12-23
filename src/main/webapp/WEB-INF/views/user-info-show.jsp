@@ -31,7 +31,7 @@
                             <tr>
                                 <td>用户名</td>
                                 <td><form:input cssClass="form-control" path="username"
-                                                disabled="${entity1.id != null}" /></td>
+                                                disabled="true" /></td>
                             </tr>
                             <tr>
                                 <td>名字</td>
