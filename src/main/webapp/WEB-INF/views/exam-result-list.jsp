@@ -24,7 +24,7 @@
 		<table class="table table-bordered">
       	<tr>
 			<th>问卷题目</th>
-			<th>问卷名称</th>
+			<th>发布者</th>
 			<th>满意度</th>
 			<th>操作</th>
       	</tr>

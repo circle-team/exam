@@ -18,7 +18,7 @@
 <div class="container">
   <div class="row">
   	<!-- 题目导航 -->
-    <div class="col-md-3" id="question-nav">
+<%--    <div class="col-md-3" id="question-nav">--%>
 <%--	  <div class="panel panel-info">--%>
 <%--	    <div class="panel-heading">--%>
 <%--	      <h3 class="panel-title">--%>
@@ -37,9 +37,9 @@
 <%--		      <h4 id="left_time">${entity.time}</h4>--%>
 <%--	      	</div>--%>
 <%--	      </div>--%>
-	    </div>
-	  </div>
-	</div>
+<%--	    </div>--%>
+<%--	  </div>--%>
+<%--	</div>--%>
 	<!-- 题目 -->
 	<div class="col-md-9">
 	  <div class="panel panel-info">

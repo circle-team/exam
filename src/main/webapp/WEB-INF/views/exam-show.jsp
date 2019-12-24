@@ -23,7 +23,13 @@
               <form action="${ctx}/exam/search" method="post">
                 <div class="input-group pull-right" style="width: 200px;">
                   <input type="text" class="form-control" placeholder="Search"
-                    name="keyword">
+                    name="keyword" list="category">
+                  <datalist id="category">
+                    <option value="体验">
+                    <option value="产品">
+                    <option value="售后">
+                    <option value="公司">
+                  </datalist>
                   <div class="input-group-btn">
                     <button class="btn btn-default" type="submit">搜索</button>
                   </div>

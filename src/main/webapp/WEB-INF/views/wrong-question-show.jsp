@@ -22,7 +22,7 @@
 	  <div class="panel panel-info">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">
-	        <span class="glyphicon glyphicon-th-list"></span>&nbsp;错题集
+	        <span class="glyphicon glyphicon-th-list"></span> 已做题
 	      </h3>
 	    </div>
 	    <div class="panel-body" style="font-size:18px;">
@@ -46,12 +46,12 @@
 	          	    </label>
 				  </div>
 		        </c:forEach>
-		        <p>正确答案：<span class="_answer"></span>
-		          &emsp;&emsp;你的选择：<span class="_choose"></span>
+<%--		        <p>正确答案：<span class="_answer"></span>--%>
+<%--		          &emsp;&emsp;你的选择：<span class="_choose"></span>--%>
 		          <a class="btn btn-primary pull-right" target="_blank"
 		            href="${ctx}/question/${result.question.id}">查看讨论区
 		          </a>
-		        </p>
+<%--		        </p>--%>
 		      </div>
 		    </div>
 		  </c:forEach>

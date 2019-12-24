@@ -7,4 +7,4 @@
 <link rel="stylesheet" href="${ctx}/static/css/my-css.css" />
 <script type="text/javascript" src="${ctx}/static/js/my-js.js"></script>
 
-<title>在线考试系统</title>
+<title>在线问卷调查系统</title>

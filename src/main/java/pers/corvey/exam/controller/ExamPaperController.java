@@ -36,7 +36,7 @@ public class ExamPaperController extends BaseControllerImpl<ExamPaper, Long> {
 	
 	@PostMapping(SAVE_PATH)
 	public String save(Model model, @ModelAttribute("entity") ExamPaper examPaper, 
-			@RequestParam("file") MultipartFile file) {
+			@RequestParam(name = "file",required = false) MultipartFile file) {
 		CallBackMessage msg;
 		try {
 			InputStream inputStream = file.getInputStream();

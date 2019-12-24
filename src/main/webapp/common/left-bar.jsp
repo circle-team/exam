@@ -13,7 +13,7 @@
       </c:if>
       <a class="list-group-item" href="${ctx}/exampaper/list">问卷管理</a>
       <a class="list-group-item" href="${ctx}/question/list">题目管理</a>
-      <a class="list-group-item" href="${ctx}/resource/list">资源管理</a>
+<%--      <a class="list-group-item" href="${ctx}/resource/list">资源管理</a>--%>
       <a class="list-group-item" href="${ctx}/exam/list">问卷详细管理</a>
       <a class="list-group-item" href="${ctx}/examresult/list">意向查看</a>
     </div>
